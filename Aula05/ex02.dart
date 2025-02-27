@@ -41,5 +41,15 @@ class Carro {
     print("Carro desligado");
   }
 
-  void main() {}
+  void main() {
+    // Cria o objeto
+    Carro Tiida = Carro();
+    Tiida.ano = 2022;
+    Tiida.marca = "Nisssan Tiida"
+    Tiida.ligar();
+    Tiida.abrirporta(2);
+    print("Exibe infos do carro");
+    print("${Tiida.marca}");
+    print("${Tiida.ano}");
+  }
 }
