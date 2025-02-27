@@ -45,7 +45,7 @@ class Carro {
     // Cria o objeto
     Carro Tiida = Carro();
     Tiida.ano = 2022;
-    Tiida.marca = "Nisssan Tiida"
+    Tiida.marca = "Nisssan Tiida";
     Tiida.ligar();
     Tiida.abrirporta(2);
     print("Exibe infos do carro");
