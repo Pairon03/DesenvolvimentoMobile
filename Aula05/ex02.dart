@@ -1,5 +1,5 @@
 /*
-Exemplo 1 - Programação orientada a objeto
+Exemplo 2 - Programação orientada a objeto
 27.02.2025
 */
 
