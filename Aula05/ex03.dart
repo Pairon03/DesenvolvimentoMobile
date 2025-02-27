@@ -1,5 +1,5 @@
 /*
-Exemplo 3 - Programação orientada a objeto
+Exemplo classe e objeto com atributo privado
 27.02.2025
 */
 
@@ -15,11 +15,21 @@ class Pessoa {
   String? getNome() {
     return _nome;
   }
+}
 
-  void main() {
-    Pessoa cliente = Pessoa();
-    cliente._nome = "Caua";
-    print("Nome do cliente: ${cliente._nome}");
-    print("Nome do cliente: ${cliente.getNome()} ");
+class Aluno {
+  String? nome;
+  getNome() {
+    return nome;
   }
+}
+
+void main() {
+  Pessoa cliente = Pessoa();
+  cliente._nome = "Daniel";
+  print("Nome do cliente: ${cliente._nome}");
+  print("Nome do cliente ${cliente.getNome()} ");
+  Aluno Bruno = Aluno();
+  Bruno.nome = "Bruno";
+  print("${Bruno.nome}");
 }
