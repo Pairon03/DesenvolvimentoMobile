@@ -11,7 +11,7 @@ class Animal {
   String? raca;
   double? peso;
 }
-Animal(this.nome, this.idade, this.cor, this.raca, this.peso);
+  Animal(this.nome, this.idade, this.cor, this.raca, this.peso);
 void acordar() {
   print("O animal esta acordado");
 }
