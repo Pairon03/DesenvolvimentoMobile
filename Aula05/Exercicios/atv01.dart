@@ -1,5 +1,5 @@
 /*
-Exercícios
+Exercício 1
 27.02.2025
 */
 
@@ -9,10 +9,6 @@ class Animal {
   int? idade;
   String? cor;
   String? raca;
-
-  void dormir() {
-    print("O animal esta dormindo");
-  }
 }
 
 void main() {
