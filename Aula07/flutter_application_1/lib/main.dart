@@ -60,6 +60,11 @@ class Telaapp extends StatelessWidget {
             height: 100,
             color: Colors.red,
           ),
+          ElevatedButton(
+              onPressed: () {
+                print("Botao pressionado");
+              },
+              child: Text("Mensagem")),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -76,7 +81,7 @@ class Telaapp extends StatelessWidget {
               Container(
                 width: 50,
                 height: 50,
-                color: Colors.orange,
+                color: Colors.deepOrange,
               ),
             ],
           )
