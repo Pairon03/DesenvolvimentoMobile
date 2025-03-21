@@ -110,9 +110,10 @@ class _HomeState extends State<Home> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(onPressed: _exibemsg, child: Text("Mensagem")),
-           // IconButton(onPressed: _exibemsg, icon: Icon(Icons.mail)),
+            // IconButton(onPressed: _exibemsg, icon: Icon(Icons.mail)),
             ElevatedButton(onPressed: _limpar, child: Text("Limpar")),
             //  TextButton(onPressed: _limpar, child: Text("Limpar"))
+            // FloatingActionButton(onPressed: _exibemsg,child: Icon(Icons.access_alarm),),
           ],
         ),
       ],
