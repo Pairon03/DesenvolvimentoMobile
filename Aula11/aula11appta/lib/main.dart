@@ -1,6 +1,7 @@
-import 'package:appaula11/screens/tela1.dart';
-import 'package:appaula11/screens/tela2.dart';
-import 'package:appaula11/screens/tela3.dart';
+import 'package:aula11appta/screens/tela1.dart';
+import 'package:aula11appta/screens/tela2.dart';
+import 'package:aula11appta/screens/tela3.dart';
+import 'package:aula11appta/screens/tela4.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -52,10 +53,10 @@ class _NavScreenState extends State<NavScreen> {
         'Index 2: Business',style: optionStyle,
       ),*/
     RadioButton(),
-    Text(
-      'Index 3: Chatbot',
-      style: optionStyle,
-    ),
+    /*Text(
+        'Index 3: Chatbot',style: optionStyle,
+      ),*/
+    ChatScreen()
   ];
 
   // cria função que será responsável por alterar o index da seleção de tela
