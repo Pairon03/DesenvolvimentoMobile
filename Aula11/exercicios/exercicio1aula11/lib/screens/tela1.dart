@@ -39,7 +39,7 @@ class Brasil extends StatelessWidget {
               padding: const EdgeInsets.symmetric(
                   horizontal: 15.0), // Adicionando espaçamento nas laterais
               child: Text(
-                "Prato tradicional da culinária brasileira, composto principalmente por feijão preto e carne de porco (como costela, linguiça e carne seca), cozidos juntos.",
+                "Prato tradicional da culinária brasileira, composto principalmente por feijão preto e carne de porco (como costela, linguiça e carne seca), cozidos juntos.Geralmente, é servido com arroz branco, farofa (farinha de mandioca), couve refogada e laranja.",
                 style: descriptionStyle, // Explicação com fonte menor
                 textAlign: TextAlign.center,
               ),
