@@ -19,7 +19,7 @@ class Mexico extends StatelessWidget {
           backgroundColor: Colors.green),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Tacos",
@@ -40,7 +40,7 @@ class Mexico extends StatelessWidget {
               padding: const EdgeInsets.symmetric(
                   horizontal: 15.0), // Adicionando espaçamento nas laterais
               child: Text(
-                "O taco é um prato tradicional mexicano, feito com uma tortilla (geralmente de milho ou trigo) dobrada ou enrolada e recheada com diversos ingredientes, como carne moída, frango, feijão, queijo, alface, tomate, e molhos. É um prato simples, porém saboroso, muito popular no México e em outras partes do mundo. .",
+                "O taco é um prato tradicional mexicano, feito com uma tortilla (geralmente de milho ou trigo) dobrada ou enrolada e recheada com diversos ingredientes, como carne moída, frango, feijão, queijo, alface, tomate, e molhos. É um prato simples, porém saboroso, muito popular no México e em outras partes do mundo.",
                 style: descriptionStyle, // Explicação com fonte menor
                 textAlign: TextAlign.center,
               ),

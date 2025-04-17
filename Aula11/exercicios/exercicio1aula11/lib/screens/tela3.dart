@@ -19,7 +19,7 @@ class Japao extends StatelessWidget {
           backgroundColor: Colors.green),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Sushi",
