@@ -42,7 +42,7 @@ class _ColetaState extends State<Coleta> {
                 ),
               ),
             ),
-            
+
             SizedBox(height: 10),
 
             // Idade
@@ -85,7 +85,7 @@ class _ColetaState extends State<Coleta> {
             // SEXO
             Text(
               "Sexo",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             RadioListTile<int>(
               title: Text("Masculino"),
@@ -113,7 +113,7 @@ class _ColetaState extends State<Coleta> {
             // ESTADO CIVIL
             Text(
               "Estado Civil",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             RadioListTile<int>(
               title: Text("Solteiro(a)"),
