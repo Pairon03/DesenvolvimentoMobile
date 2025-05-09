@@ -1,83 +1,68 @@
-import 'package:appaula14ta/screens/cadastroproduto.dart';
-import 'package:appaula14ta/screens/cadastrousuario.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert'; // biblioteca para decodificar o json
 
-class Login extends StatefulWidget {
-  const Login({super.key});
+class Cadastrousuario extends StatefulWidget {
+  const Cadastrousuario({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<Cadastrousuario> createState() => _CadastrousuarioState();
 }
 
-class _LoginState extends State<Login> {
+class _CadastrousuarioState extends State<Cadastrousuario> {
   // Criando variaveis para usuario e senha
-  TextEditingController user = TextEditingController();
-  TextEditingController senha = TextEditingController();
+  TextEditingController user_n = TextEditingController();
+  TextEditingController senha_n = TextEditingController();
   // variavel para exibir a senha
   bool exibir = false;
   // função para realize o login
-  _verificaLogin() async {
+  _cadastrausuario() async {
     // Flag para quando encontrar o login
     bool encuser = false;
     // url com a api dos usuarios
     String url = "http://10.109.83.16:3000/usuarios";
     // Criando a variavel para armazenar a resposta da api
     http.Response resposta = await http.get(Uri.parse(url));
-    List clientes =
-        <Users>[]; // cria uma lista para armazenar os usuarios cadastrados
-    print(resposta.statusCode); // codigo de retorno da API
 
-    // cria uma variavel para armazenar os dados
-    var dados = json.decode(resposta.body)
-        as List; // armazena os dados na forma de lista
-    print("${dados[0]["login"]} ${dados[0]["senha"]}");
+    // Cria dado para fazer o post cadastrando o usuario
+    Map<String, dynamic> mensagem = {
+      "id": user_n.text,
+      "login": user_n.text,
+      "senha": senha_n.text
+    };
 
-    // laço de repetição para exibir mais de um usuario cadastrado na api
-    for (int i = 0; i < dados.length; i++) {
-      print("${dados[i]["login"]}  ${dados[i]["senha"]}");
-      if (user.text == dados[i]["login"] && senha.text == dados[i]["senha"]) {
-        encuser = true;
-      }
-    }
-    if (encuser == true) {
-      print("Usuario ${user.text} encontrado");
-      encuser = false;
-      // vai para outra tela
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => Cadastroproduto()));
-      user.text = "";
-      senha.text = "";
-    } else {
-      print("Usuario não encontrado");
-      user.text = "";
-      senha.text = "";
-      // Pop up de usuario não encontrado
-      /*ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content:Text("Usuario nao encontrado"),duration: Duration(seconds:2),)
-      );*/
-
-      showDialog(
-          context: context,
-          builder: (BuildContext) {
-            return AlertDialog(
-              content: Text("Usuário não encontrado"),
-              actions: [
-                TextButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                    },
-                    child: Text("Fechar"))
-              ],
-            );
-          });
-    }
+    // criando a requisição post para cadastrar o usuario
+    http.post(Uri.parse(url),
+        headers: <String, String>{
+          'Content-type': 'application/json; charset=UTF-8'
+        },
+        body: jsonEncode(mensagem));
+    print("Usuario cadastrado");
+    user_n.text = "";
+    senha_n.text = "";
+    showDialog(
+        context: context,
+        builder: (BuildContext) {
+          return AlertDialog(
+            content: Text("Usuário cadastrado com sucesso"),
+            actions: [
+              TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text("Fechar"))
+            ],
+          );
+        });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Cadastrar usuario"),
+        backgroundColor: Colors.red,
+      ),
       backgroundColor: Colors.white,
       body: Center(
         child: Column(
@@ -102,7 +87,7 @@ class _LoginState extends State<Login> {
                             color: Colors.red,
                           ),
                           hintText: "Digite seu login"),
-                      controller: user,
+                      controller: user_n,
                     ),
                   ),
                   Padding(
@@ -130,19 +115,11 @@ class _LoginState extends State<Login> {
                           hintText: "Digite sua senha"),
                       obscureText: exibir,
                       obscuringCharacter: '*',
-                      controller: senha,
+                      controller: senha_n,
                     ),
                   ),
                   ElevatedButton(
-                      onPressed: _verificaLogin, child: Text("Entrar")),
-                  ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Cadastrousuario()));
-                      },
-                      child: Text("Cadastrar"))
+                      onPressed: _cadastrausuario, child: Text("Cadastrar")),
                 ],
               ),
             )
