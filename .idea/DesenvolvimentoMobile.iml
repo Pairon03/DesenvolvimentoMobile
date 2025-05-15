@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/appaula07b/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/appaula07b/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/appaula07b/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/flutter_application_1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/flutter_application_1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula07/flutter_application_1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a2/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a2/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a2/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a3/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a3/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a3/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a4/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a4/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula08/appaula08a4/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ex1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ex1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ex1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ta/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ta/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ta/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ta02/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ta02/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula09/app_aula09ta02/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/aula11appta/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/aula11appta/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/aula11appta/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/exercicios/exercicio1aula11/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/exercicios/exercicio1aula11/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/exercicios/exercicio1aula11/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/exercicios/exercicio2aula11/exercicio2aula11/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/exercicios/exercicio2aula11/exercicio2aula11/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula11/exercicios/exercicio2aula11/exercicio2aula11/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula14/appaula14_ta/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula14/appaula14_ta/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Aula14/appaula14_ta/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
